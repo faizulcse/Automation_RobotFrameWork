@@ -19,6 +19,9 @@ LoginTest to nopcommerce website
 
 loginToApplication
     click link      xpath://a[@class='ico-login']
-    input text      id:Email    pavanoltraining@gmail.com
+    ${"email_txt"}  set variable    id:Email
+    element should be visible   ${"email_txt"}
+    element should be enabled   ${"email_txt"}
+    input text      ${"email_txt"}   pavanoltraining@gmail.com
     input text      id:Password     Test@123
     click element   xpath://input[@class='button-1 login-button']
