@@ -9,8 +9,12 @@ ${url}      http://demowebshop.tricentis.com/register
 RegTest
     open browser    ${url}  ${browser}
     maximize browser window
+
+    ${time}=   get selenium timeout
+    log to console  ${time}
+
     set selenium timeout    10
-    wait until page contains    Regrister
+    wait until page contains    Register
     select radio button     Gender      M
     input text  name:FirstName      Faizul
     input text  name:LastName       Islam
