@@ -10,10 +10,11 @@ RegTest
     open browser    ${url}  ${browser}
     maximize browser window
 
-    ${time}=   get selenium timeout
-    log to console  ${time}
+    set selenium implicit wait  10
 
-    set selenium timeout    10
+    ${implicit_wait}=   get selenium implicit wait
+    log to console  ${implicit_wait}
+
     wait until page contains    Register
     select radio button     Gender      M
     input text  name:FirstName      Faizul
