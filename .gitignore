@@ -3,3 +3,6 @@ venv/
 log.html
 report.html
 output.xml
+results/
+screenshot/
+.pabotsuitenames
