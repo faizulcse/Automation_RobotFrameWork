@@ -1,7 +1,7 @@
 
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ../Resources/login_resources.robot
+Resource  ../resources/login_resources.robot
 Library  DataDriver     ../TestData/LoginData.csv
 
 Suite Setup  Open My Browser

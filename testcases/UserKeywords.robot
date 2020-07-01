@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    ../Resources/resources.robot
+Resource    ../resources/resources.robot
 
 *** Variables ***
 ${url}      http://newtours.demoaut.com/

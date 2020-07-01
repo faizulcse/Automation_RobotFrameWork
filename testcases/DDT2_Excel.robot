@@ -1,7 +1,7 @@
 
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ../Resources/login_resources.robot
+Resource  ../resources/login_resources.robot
 Library  DataDriver     ../TestData/LoginData.xlsx  sheet_name  Sheet1
 
 Suite Setup  Open My Browser
